@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".UsersActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/brown"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textViewHerPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="example@example.com" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Messages"
+        android:layout_below="@id/title"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/brown"
+        />
+
+    <!-- Add this EditText for search -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:hint="Search for users by name or email"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:padding="8dp" />
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:backgroundTint="@color/brown"
+        android:layout_below="@id/editTextSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+
+
+    <!-- RecyclerView for opportunity board Content -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonSearch"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Menu -->
+    <!-- Menu -->
+    <LinearLayout
+        android:id="@id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/brown"
+        android:padding="16dp">
+
+        <!-- Menu items -->
+
+        <TextView
+            android:id="@+id/opportunityBoardMenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/baseline_work_24"
+            android:text="Opportunity Board"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/messagesMenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/baseline_message_24"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/settingsMenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Settings"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/baseline_settings_24"
+            android:textColor="@android:color/white"
+            />
+
+        <!-- Logout button or link -->
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

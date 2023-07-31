@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1067989674420",
+    "firebase_url": "https://herpath-6651b-default-rtdb.firebaseio.com",
+    "project_id": "herpath-6651b",
+    "storage_bucket": "herpath-6651b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067989674420:android:2b1abd8271e82ddf732ae1",
+        "android_client_info": {
+          "package_name": "com.example.herpath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067989674420-4o00mccg8t0l8fbrole78qgah5ha3pkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkLCY0z3g8Q1Cb3QxZ-QJK86a1jaVujYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067989674420-4o00mccg8t0l8fbrole78qgah5ha3pkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

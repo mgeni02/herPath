@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".OpportunityBoardActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/brown"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textViewHerPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="example@example.com" />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_below="@+id/title">
+
+            <!-- Job Title -->
+            <TextView
+                android:id="@+id/jobTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/brown"
+                android:text="Job Title" />
+
+            <!-- Company Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <!-- Company Name -->
+                <TextView
+                    android:id="@+id/companyNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/brown"
+                    android:text="Company Name" />
+
+                <!-- Add space between Company Name and Location -->
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+                <!-- Location -->
+                <TextView
+                    android:id="@+id/locationTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="@color/brown"
+                    android:text="Location" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/deadlineTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown"
+                android:textSize="18sp"
+                android:text="Deadline" />
+
+            <!-- Other job details (e.g., location, salary, etc.) -->
+            <!-- Add appropriate views based on your job item details -->
+
+            <!-- Apply Button -->
+            <Button
+                android:id="@+id/applyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Now"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/brown"/>
+
+            <!-- Job Description -->
+            <TextView
+                android:id="@+id/jobDescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Job Description" />
+
+        </LinearLayout>
+
+
+
+    <!-- Menu -->
+    <!-- Menu -->
+    <LinearLayout
+        android:id="@id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/brown"
+        android:padding="16dp">
+
+        <!-- Menu items -->
+
+        <TextView
+            android:id="@+id/opportunityBoardMenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/baseline_work_24"
+            android:text="Opportunity Board"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/messagesMenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/baseline_message_24"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/settingsMenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Settings"
+            android:textStyle="bold"
+            android:drawableTop="@drawable/baseline_settings_24"
+            android:textColor="@android:color/white"
+            />
+
+        <!-- Logout button or link -->
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/khaki"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</RelativeLayout>

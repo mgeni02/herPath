@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:background="#F0d5bb"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Register Here"
+            android:textAlignment="center"
+            android:textColor="#664229"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30664229"
+            android:ems="10"
+            android:hint="Full Name"
+            android:padding="20dp"
+            android:textColorHint="#664229"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30664229"
+            android:ems="10"
+            android:hint="Email"
+            android:padding="20dp"
+            android:textColorHint="#664229"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextUsername1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30664229"
+            android:ems="10"
+            android:hint="Username"
+            android:padding="20dp"
+            android:textColorHint="#664229"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="20dp"/>
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30664229"
+            android:ems="10"
+            android:hint="Password"
+            android:padding="20dp"
+            android:textColorHint="#664229"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/baseline_remove_red_eye_24"
+            android:drawablePadding="20dp"/>
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30664229"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:padding="20dp"
+            android:textColorHint="#664229"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/baseline_remove_red_eye_24"
+            android:drawablePadding="20dp"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/register"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:text="Sign Up"
+            android:textColor="#F0D5BB"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/loginNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Or Sign IN"
+            android:textAlignment="center"
+            android:textColor="#664229"
+            android:textStyle="bold"
+             />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".AddPost"
+    android:layout_centerInParent="true">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:background="@color/brown"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+
+    <!-- EditText for the caption -->
+    <EditText
+        android:id="@+id/editTextCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="Enter caption here" />
+
+    <!-- Button for uploading image -->
+    <Button
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCaption"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/brown"
+        android:backgroundTint="@color/khaki"
+        android:text="Upload Image"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/addPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonUploadImage"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/brown"
+        android:text="Add Post"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add any other views or widgets you need for the activity here -->
+
+</RelativeLayout>
