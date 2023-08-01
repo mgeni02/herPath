@@ -138,7 +138,8 @@
             android:text="Logout"
             android:textSize="18dp"
             android:textStyle="bold"
+            android:backgroundTint="@color/khaki"
             android:layout_marginBottom="15dp"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black" />
     </LinearLayout>
 </RelativeLayout>

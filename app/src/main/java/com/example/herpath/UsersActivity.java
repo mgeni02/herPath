@@ -133,7 +133,9 @@ public class UsersActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 userList.clear(); // Clear the existing userList before adding new data
                 for (DataSnapshot userSnapshot : dataSnapshot.getChildren()) {
+                    String userId = userSnapshot.getKey();
                     User user = userSnapshot.getValue(User.class);
+                    user.setUserId(userId);
                     if (user != null) {
                         userList.add(user);
                     } else {
@@ -142,11 +144,6 @@ public class UsersActivity extends AppCompatActivity {
                 }
                 Log.d("UsersActivity", "Fetched users count: " + userList.size());
 
-                // Store the original user list fetched from Firebase
-                //originalUserList.clear();
-                //originalUserList.addAll(userList);
-
-                // Update the data in the adapter
                 usersAdapter.notifyDataSetChanged();
             }
 

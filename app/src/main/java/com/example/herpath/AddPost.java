@@ -35,7 +35,7 @@ public class AddPost extends AppCompatActivity {
         btnAddPost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                onBackPressed();
             }
         });
 
@@ -43,8 +43,7 @@ public class AddPost extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Finish the current activity to go back to the previous activity in the back stack (MessagesActivity)
-                finish();
+                onBackPressed();
             }
         });
     }
